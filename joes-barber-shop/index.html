@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joe’s Barber Shop | University Drive, Mesa</title>
+  <meta name="description" content="Joe’s Barber Shop, also listed as Joe Davis Barber Shop, is at 638 E University Dr, Mesa, AZ. Call or text (480) 834-0904 to book a chair.">
+  <meta name="theme-color" content="#1d3a2f">
+  <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/joes-barber-shop/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='10' fill='%231d3a2f'/%3E%3Crect y='10' width='32' height='6' fill='%23e6d3b1'/%3E%3Crect y='16' width='32' height='16' fill='%231d3a2f'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Spectral:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1d3a2f;
+      --tan: #e6d3b1;
+      --cream: #f7f1e6;
+      --rust: #a34b2c;
+      --ink: #1c1914;
+      --focus: #a34b2c;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font: inherit; cursor: pointer; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: Archivo, "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      overflow-x: clip;
+    }
+    .awning {
+      height: 1.1rem;
+      background: repeating-linear-gradient(90deg, var(--forest) 0 18px, var(--tan) 18px 28px);
+    }
+    .skip {
+      position: absolute; left: 0.75rem; top: 0; transform: translateY(-120%);
+      background: var(--forest); color: var(--cream); padding: 0.55rem 0.8rem; z-index: 5;
+    }
+    .skip:focus { transform: none; top: 0.75rem; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a { color: var(--forest); }
+    .shop {
+      background: var(--forest);
+      color: var(--cream);
+      padding: 1.4rem 0 1.6rem;
+    }
+    .shop a { color: var(--tan); }
+    .shop a.btn-tan { background: var(--tan); color: var(--forest); }
+    .shop a.btn-line { color: #f7f1e6; border-color: var(--tan); }
+    .wrap { width: min(46rem, calc(100% - 2rem)); margin-inline: auto; }
+    .kicker { margin: 0; letter-spacing: 0.16em; text-transform: uppercase; font-size: 0.75rem; font-weight: 700; color: var(--tan); }
+    h1 {
+      font-family: Spectral, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.8rem, 11vw, 4.4rem);
+      line-height: 0.95;
+      margin: 0.3rem 0 0.2rem;
+    }
+    .aka { margin: 0 0 0.6rem; color: var(--tan); }
+    nav { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; }
+    nav a { font-weight: 700; }
+    .actions { display: grid; gap: 0.55rem; margin-top: 1rem; }
+    .btn {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 3.3rem; padding: 0.7rem 1rem; text-decoration: none; font-weight: 700;
+      border: 2px solid transparent;
+    }
+    .btn-tan { background: var(--tan); color: var(--forest); }
+    .btn-line { background: transparent; color: var(--cream); border: 2px solid var(--tan); }
+    .btn-rust { background: var(--rust); color: #fff; border: 0; font: inherit; font-weight: 700; font-size: 1rem; }
+    main { padding: 0.4rem 0 1rem; }
+    section { padding: 1rem 0; }
+    h2 { font-family: Spectral, Georgia, serif; font-size: 1.9rem; margin: 0 0 0.5rem; }
+    .window {
+      background: #fffdf8;
+      border: 8px solid var(--forest);
+      padding: 1rem;
+    }
+    label { display: block; font-weight: 700; margin: 0.55rem 0 0.25rem; }
+    input {
+      width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
+      border: 2px solid var(--forest); padding: 0.7rem; background: #fff;
+    }
+    .list { display: grid; gap: 0.5rem; }
+    .list article {
+      display: grid; grid-template-columns: 4.5rem 1fr; gap: 0.6rem; align-items: center;
+      background: #fffdf8; padding: 0.7rem 0.8rem;
+    }
+    .list span {
+      font-family: Spectral, Georgia, serif; font-size: 1.4rem; color: var(--rust);
+    }
+    .list h3 { margin: 0; font-size: 1.05rem; }
+    .list p { margin: 0.1rem 0 0; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 0.65rem 0; border-bottom: 1px solid #e0d3bc; font-weight: 400; }
+    address { font-style: normal; }
+    .map iframe { width: 100%; height: 250px; border: 0; background: #e6d3b1; }
+    footer { padding: 0.2rem 0 2rem; color: #3d4a40; }
+    @media (min-width: 700px) {
+      .actions { grid-template-columns: 1fr 1fr; }
+      .visit { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (forced-colors: active) { .btn { border: 1px solid ButtonText; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="awning" aria-hidden="true"></div>
+  <header class="shop">
+    <div class="wrap">
+      <p class="kicker">Barbershop · University Drive</p>
+      <h1>Joe’s Barber Shop</h1>
+      <p class="aka">Also listed as Joe Davis Barber Shop.</p>
+      <p>Call or text to book a chair.</p>
+      <p>638 E University Dr, Mesa, AZ 85203</p>
+      <nav aria-label="On this page">
+        <a href="#book">Book</a>
+        <a href="#services">Services</a>
+        <a href="#hours">Hours</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-tan" href="tel:+14808340904">Call (480) 834-0904</a>
+        <a class="btn btn-line" href="sms:+14808340904">Text to book</a>
+      </div>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section id="book" aria-labelledby="book-title">
+      <div class="window">
+        <h2 id="book-title">Book a chair</h2>
+        <p>This opens a text to (480) 834-0904. You send the message.</p>
+        <form id="book-form">
+          <label for="guest">Name</label>
+          <input id="guest" name="name" autocomplete="name" required>
+          <label for="when">Day and time</label>
+          <input id="when" name="when" required placeholder="Thursday morning">
+          <div class="actions">
+            <button class="btn btn-rust" type="submit">Text this request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section id="services" aria-labelledby="services-title">
+      <h2 id="services-title">At the shop</h2>
+      <div class="list">
+        <article><span>01</span><div><h3>Haircuts</h3><p>Book a chair and say what you want.</p></div></article>
+        <article><span>02</span><div><h3>Beard trims</h3><p>Ask when you call or text.</p></div></article>
+        <article><span>03</span><div><h3>A set time</h3><p>Text a day and time that work for you.</p></div></article>
+      </div>
+    </section>
+    <section id="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">Hours</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Monday–Friday</th><td>8:00 a.m.–5:00 p.m.</td></tr>
+          <tr><th scope="row">Saturday</th><td>8:00 a.m.–4:00 p.m.</td></tr>
+          <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="visit" id="visit" aria-labelledby="visit-title">
+      <div>
+        <h2 id="visit-title">Visit</h2>
+        <address>
+          638 E University Dr<br>
+          Mesa, AZ 85203
+        </address>
+        <p><a href="tel:+14808340904">(480) 834-0904</a></p>
+        <p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=638%20E%20University%20Dr%2C%20Mesa%2C%20AZ%2085203" target="_blank" rel="noopener noreferrer">Get directions<span class="sr-only"> (opens in a new tab)</span></a></p>
+        <p><a href="https://facebook.com/114462145294969" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+      <div class="map">
+        <iframe title="Map of Joe’s Barber Shop at 638 E University Dr, Mesa, AZ 85203" src="https://maps.google.com/maps?q=638%20E%20University%20Dr%2C%20Mesa%2C%20AZ%2085203&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <script>
+    (function () {
+      var form = document.getElementById("book-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var data = new FormData(form);
+        var body = "Hi Joe's Barber Shop, I'd like to book a chair. Name: " + data.get("name").toString().trim() + ". Time: " + data.get("when").toString().trim() + ".";
+        window.location.href = "sms:+14808340904?body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

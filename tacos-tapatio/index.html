@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tacos Tapatio | Mexican food truck in Mesa</title>
+  <meta name="description" content="Tacos Tapatio is a Mexican food truck and catering truck at 7602 E Main St, Mesa, AZ. Text to order. Hours vary — check Facebook or text before you come.">
+  <meta name="theme-color" content="#1c120c">
+  <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/tacos-tapatio/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231c120c'/%3E%3Crect y='22' width='32' height='10' fill='%23ffb703'/%3E%3Ctext x='16' y='18' text-anchor='middle' font-size='16' font-family='Impact,sans-serif' fill='%23ffb703'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Staatliches&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1c120c;
+      --ink: #f8ecd4;
+      --muted: #e4c99a;
+      --amber: #ffb703;
+      --chile: #9d1c12;
+      --paper: #f6e7c1;
+      --focus: #ffb703;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font: inherit; cursor: pointer; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        repeating-linear-gradient(-45deg, rgba(255,183,3,.06) 0 12px, transparent 12px 24px),
+        var(--bg);
+      color: var(--ink);
+      font-family: "Figtree", "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      overflow-x: clip;
+    }
+    .skip, .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
+    .skip:focus {
+      position: fixed; left: 0.75rem; top: 0.75rem;
+      width: auto; height: auto; margin: 0; clip: auto;
+      background: var(--amber); color: var(--bg);
+      padding: 0.6rem 0.9rem; z-index: 5; font-weight: 700;
+    }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a { color: var(--amber); }
+    .wrap { width: min(46rem, calc(100% - 2rem)); margin-inline: auto; }
+    .awning {
+      height: 0.7rem;
+      background: repeating-linear-gradient(90deg, var(--amber) 0 1.4rem, var(--chile) 1.4rem 2.8rem);
+    }
+    header { padding: 1.25rem 0 0.5rem; }
+    .kicker {
+      margin: 0;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--amber);
+    }
+    h1 {
+      font-family: Staatliches, Impact, sans-serif;
+      font-size: clamp(3.4rem, 16vw, 5.5rem);
+      font-weight: 400;
+      line-height: 0.86;
+      letter-spacing: 0.01em;
+      margin: 0.2rem 0 0.4rem;
+    }
+    .tagline { margin: 0; font-size: 1.2rem; color: var(--muted); max-width: 28rem; }
+    .place { margin: 0.75rem 0 0; font-weight: 700; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; padding: 1rem 0 0.25rem; }
+    nav a { color: var(--ink); font-weight: 700; font-size: 0.95rem; }
+    .actions { display: grid; gap: 0.6rem; margin: 1.1rem 0 0; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      min-height: 3.4rem; padding: 0.75rem 1rem;
+      border-radius: 999px; text-decoration: none; font-weight: 700;
+      border: 2px solid transparent;
+    }
+    .btn-primary { background: var(--amber); color: var(--bg); }
+    .btn-ghost { background: transparent; color: var(--ink); border-color: rgba(248,236,212,.45); }
+    .btn-dark { background: var(--chile); color: var(--paper); }
+    section { padding: 1.4rem 0; }
+    h2 {
+      font-family: Staatliches, Impact, sans-serif;
+      font-size: 2rem; font-weight: 400; letter-spacing: 0.03em;
+      margin: 0 0 0.6rem;
+    }
+    .ticket {
+      background: var(--paper);
+      color: var(--bg);
+      padding: 1.15rem 1.1rem 1.2rem;
+      border-radius: 1rem 1rem 0.4rem 0.4rem;
+      box-shadow: 0 16px 40px rgba(0,0,0,.28);
+    }
+    .ticket h2, .ticket p, .ticket label { color: var(--bg); }
+    .ticket a { color: var(--chile); }
+    .ticket .hint { margin: 0 0 0.9rem; }
+    label { display: block; font-weight: 700; margin: 0.7rem 0 0.3rem; }
+    textarea, input, select {
+      width: 100%; font: inherit; font-size: 1rem; color: #1c120c;
+      background: #fff; border: 2px solid #1c120c; border-radius: 0.7rem;
+      padding: 0.75rem 0.8rem;
+    }
+    .grid { display: grid; gap: 0.7rem; }
+    .card {
+      border: 1px solid rgba(248,236,212,.2);
+      border-left: 4px solid var(--amber);
+      padding: 0.9rem 1rem;
+      background: rgba(255,255,255,.03);
+    }
+    .card h3 { margin: 0 0 0.2rem; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .hours-note {
+      border: 1px dashed rgba(255,183,3,.7);
+      padding: 1rem;
+      background: rgba(255,183,3,.08);
+    }
+    .hours-note p { margin: 0.4rem 0 0; }
+    address { font-style: normal; }
+    .map iframe {
+      width: 100%; height: 260px; border: 0; border-radius: 0.8rem;
+      background: #2a1810; margin-top: 0.8rem;
+    }
+    .links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.2rem; margin-top: 0.9rem; font-weight: 700; }
+    footer {
+      padding: 1.5rem 0 2rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    @media (min-width: 720px) {
+      .actions { grid-template-columns: 1fr 1fr; }
+      .grid { grid-template-columns: 1fr 1fr 1fr; }
+      .visit { display: grid; grid-template-columns: 1fr 1.2fr; gap: 1.2rem; align-items: start; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media (forced-colors: active) {
+      .btn { border: 1px solid ButtonText; }
+    }
+    @media print {
+      body { background: #fff; color: #000; }
+      .ticket { box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="awning" aria-hidden="true"></div>
+  <header class="wrap">
+    <p class="kicker">Mesa food truck · Catering</p>
+    <h1>Tacos Tapatio</h1>
+    <p class="tagline">Mexican food truck and catering on East Main. Text your order ahead.</p>
+    <p class="place">7602 E Main St, Mesa, AZ 85207</p>
+    <nav aria-label="On this page">
+      <a href="#order">Text to order</a>
+      <a href="#food">Food</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Find the truck</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-primary" href="sms:+14803908775">Text to order</a>
+      <a class="btn btn-ghost" href="tel:+14803908775">Call (480) 390-8775</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap" id="order" aria-labelledby="order-title">
+      <form class="ticket" id="order-form">
+        <h2 id="order-title">Text to order</h2>
+        <p class="hint">This opens a text to (480) 390-8775. Nothing is sent until you press send in your messages app.</p>
+        <label for="order-note">What do you want, and when?</label>
+        <textarea id="order-note" name="note" rows="4" required placeholder="How many people, what you’d like, and a pickup time"></textarea>
+        <div class="actions">
+          <button class="btn btn-dark" type="submit">Text this order</button>
+        </div>
+      </form>
+    </section>
+    <section class="wrap" id="food" aria-labelledby="food-title">
+      <h2 id="food-title">Ask what’s on the truck</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Tacos and plates</h3>
+          <p>Mexican food truck cooking. Text for today’s menu before you order.</p>
+        </article>
+        <article class="card">
+          <h3>Catering</h3>
+          <p>They cater. Text the truck to ask about a job.</p>
+        </article>
+        <article class="card">
+          <h3>Pickup</h3>
+          <p>When they’re open, find them at 7602 E Main St.</p>
+        </article>
+      </div>
+    </section>
+    <section class="wrap" id="hours" aria-labelledby="hours-title">
+      <div class="hours-note">
+        <h2 id="hours-title">Hours vary</h2>
+        <p>Hours change around catering jobs. Check <a href="https://www.facebook.com/410041009466667" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a> or text (480) 390-8775 before you drive over.</p>
+        <p>Evening service at 7602 E Main St is common, and the schedule still changes. A text or Facebook message is the sure way to know if the truck is out.</p>
+      </div>
+    </section>
+    <section class="wrap visit" id="visit" aria-labelledby="visit-title">
+      <div>
+        <h2 id="visit-title">Find the truck</h2>
+        <address>
+          7602 E Main St<br>
+          Mesa, AZ 85207
+        </address>
+        <p>Call or text <a href="tel:+14803908775">(480) 390-8775</a></p>
+        <div class="links">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=7602%20E%20Main%20St%2C%20Mesa%2C%20AZ%2085207" target="_blank" rel="noopener noreferrer">Get directions<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://www.facebook.com/410041009466667" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="sms:+14803908775">Text (480) 390-8775</a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map of Tacos Tapatio at 7602 E Main St, Mesa, AZ 85207" src="https://maps.google.com/maps?q=7602%20E%20Main%20St%2C%20Mesa%2C%20AZ%2085207&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <script>
+    (function () {
+      var form = document.getElementById("order-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var note = new FormData(form).get("note").toString().trim();
+        var body = "Hi Tacos Tapatio, I'd like to order: " + note;
+        window.location.href = "sms:+14803908775?body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

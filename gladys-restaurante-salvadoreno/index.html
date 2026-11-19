@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glady’s Restaurante Salvadoreño | Mesa</title>
+  <meta name="description" content="Glady’s Restaurante Salvadoreño is a Salvadoran restaurant at 1423 S Country Club Dr, Mesa, AZ. Call or text (480) 649-2541 to order ahead.">
+  <meta name="theme-color" content="#6e2410">
+  <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/gladys-restaurante-salvadoreno/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%236e2410'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f2c14e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Nunito+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --clay: #6e2410;
+      --terra: #c4491d;
+      --palm: #1f6b4a;
+      --sun: #f2c14e;
+      --cream: #fff6ea;
+      --ink: #3d2914;
+      --focus: #1f6b4a;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font: inherit; cursor: pointer; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "Nunito Sans", "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      overflow-x: clip;
+    }
+    .skip {
+      position: absolute; left: 0.75rem; top: 0; transform: translateY(-120%);
+      background: var(--sun); color: #1a1408; padding: 0.55rem 0.8rem; z-index: 5; font-weight: 800;
+    }
+    .skip:focus { transform: none; top: 0.75rem; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a { color: var(--palm); }
+    .hero {
+      background:
+        radial-gradient(circle at 12% 20%, rgba(242,193,78,.35), transparent 28%),
+        radial-gradient(circle at 88% 10%, rgba(31,107,74,.35), transparent 26%),
+        radial-gradient(circle at 70% 80%, rgba(255,246,234,.18), transparent 30%),
+        linear-gradient(165deg, #8a3414, var(--clay));
+      color: #fffaf3;
+      padding: 1.6rem 0 2.8rem;
+      border-radius: 0 0 2.4rem 2.4rem;
+    }
+    .hero a { color: #fffaf3; }
+    .hero nav a { color: #fffaf3; }
+    .hero a.btn-sun { background: var(--sun); color: #1a1408; }
+    .hero a.btn-line { color: #fffaf3; border-color: rgba(255,250,243,.75); }
+    .wrap { width: min(52rem, calc(100% - 2rem)); margin-inline: auto; }
+    .kicker { margin: 0; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.78rem; font-weight: 800; color: var(--sun); }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 650;
+      font-size: clamp(2.5rem, 10vw, 4.2rem);
+      line-height: 1;
+      margin: 0.35rem 0;
+    }
+    .tagline { margin: 0; font-size: 1.15rem; max-width: 36rem; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; margin-top: 0.9rem; }
+    nav a { color: #fffaf3; font-weight: 800; }
+    .actions { display: grid; gap: 0.6rem; margin-top: 1.1rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 3.4rem; padding: 0.7rem 1rem; border-radius: 999px;
+      text-decoration: none; font-weight: 800; border: 2px solid transparent;
+    }
+    .btn-sun { background: var(--sun); color: #1a1408; }
+    .btn-line { background: transparent; color: #fffaf3; border-color: rgba(255,250,243,.6); }
+    .btn-palm { background: var(--palm); color: #fff; }
+    section { padding: 1.4rem 0; }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 2rem; font-weight: 650; margin: 0 0 0.7rem;
+    }
+    .days { display: grid; gap: 0.55rem; }
+    .day {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 0.8rem 0.9rem;
+      box-shadow: 0 1px 0 rgba(61,41,20,.08);
+    }
+    .day strong { display: block; }
+    .day.off { background: #f3e2d4; }
+    .plates { display: grid; gap: 0.7rem; }
+    .plate {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1rem;
+      border-top: 5px solid var(--terra);
+    }
+    .plate h3 { margin: 0 0 0.25rem; }
+    .plate p { margin: 0; }
+    form {
+      background: #fff;
+      border-radius: 1.2rem;
+      padding: 1rem;
+      border: 2px solid #efd8c4;
+    }
+    label { display: block; font-weight: 800; margin: 0.65rem 0 0.3rem; }
+    textarea {
+      width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
+      border: 2px solid #e4cbb8; border-radius: 0.8rem; padding: 0.75rem;
+      background: #fff;
+    }
+    address { font-style: normal; }
+    .map iframe { width: 100%; height: 260px; border: 0; border-radius: 1rem; background: #f3e2d4; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.8rem 1.1rem; font-weight: 800; }
+    footer { padding: 0.5rem 0 2rem; color: #6b4423; }
+    @media (min-width: 720px) {
+      .days { grid-template-columns: 1fr 1fr; }
+      .actions { grid-template-columns: 1fr 1fr; max-width: 36rem; }
+      .plates { grid-template-columns: 1fr 1fr 1fr; }
+      .visit { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem; align-items: start; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (forced-colors: active) { .btn { border: 1px solid ButtonText; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Restaurante salvadoreño</p>
+      <h1>Glady’s Restaurante Salvadoreño</h1>
+      <p class="tagline">Salvadoran restaurant on Country Club Drive. Call or text to order ahead and ask what’s on today.</p>
+      <p>1423 S Country Club Dr, Mesa, AZ 85210</p>
+      <nav aria-label="On this page">
+        <a href="#hours">Hours</a>
+        <a href="#food">Food</a>
+        <a href="#order">Order ahead</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <div class="actions">
+        <a class="btn btn-sun" href="tel:+14806492541">Call (480) 649-2541</a>
+        <a class="btn btn-line" href="sms:+14806492541">Text to order ahead</a>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap" id="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">Hours</h2>
+      <div class="days">
+        <article class="day off"><strong>Monday</strong> Closed</article>
+        <article class="day"><strong>Tuesday–Friday</strong> 8:00 a.m.–8:00 p.m.</article>
+        <article class="day"><strong>Saturday</strong> 8:00 a.m.–10:00 p.m.</article>
+        <article class="day"><strong>Sunday</strong> 8:00 a.m.–9:00 p.m.</article>
+      </div>
+    </section>
+    <section class="wrap" id="food" aria-labelledby="food-title">
+      <h2 id="food-title">Salvadoran cooking</h2>
+      <div class="plates">
+        <article class="plate">
+          <h3>Breakfast</h3>
+          <p>Open at 8:00 a.m. Call to hear the morning plates.</p>
+        </article>
+        <article class="plate">
+          <h3>Lunch and dinner</h3>
+          <p>Salvadoran plates through the afternoon and evening. Ask what’s on the stove.</p>
+        </article>
+        <article class="plate">
+          <h3>To-go</h3>
+          <p>Order ahead by phone so it’s ready when you arrive.</p>
+        </article>
+      </div>
+    </section>
+    <section class="wrap" id="order" aria-labelledby="order-title">
+      <h2 id="order-title">Order ahead</h2>
+      <form id="order-form">
+        <p>This opens a text to (480) 649-2541. You send it yourself.</p>
+        <label for="order-note">What would you like?</label>
+        <textarea id="order-note" name="note" rows="4" required placeholder="What you’d like, how many, and a pickup time"></textarea>
+        <div class="actions">
+          <button class="btn btn-palm" type="submit">Text this order</button>
+        </div>
+      </form>
+    </section>
+    <section class="wrap visit" id="visit" aria-labelledby="visit-title">
+      <div>
+        <h2 id="visit-title">Visit</h2>
+        <address>
+          1423 S Country Club Dr<br>
+          Mesa, AZ 85210
+        </address>
+        <p>Call or text <a href="tel:+14806492541">(480) 649-2541</a></p>
+        <div class="links">
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1423%20S%20Country%20Club%20Dr%2C%20Mesa%2C%20AZ%2085210" target="_blank" rel="noopener noreferrer">Get directions<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://www.facebook.com/papiwlli" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+      <div class="map">
+        <iframe title="Map of Glady’s Restaurante Salvadoreño at 1423 S Country Club Dr, Mesa, AZ 85210" src="https://maps.google.com/maps?q=1423%20S%20Country%20Club%20Dr%2C%20Mesa%2C%20AZ%2085210&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <script>
+    (function () {
+      var form = document.getElementById("order-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var note = new FormData(form).get("note").toString().trim();
+        var body = "Hi Glady's, I'd like to order ahead: " + note;
+        window.location.href = "sms:+14806492541?body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

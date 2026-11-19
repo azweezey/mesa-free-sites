@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cleaning Ladies | House cleaning in Mesa</title>
+  <meta name="description" content="The Cleaning Ladies provide house cleaning in Mesa, AZ. Monday–Friday 8:00 a.m.–4:00 p.m. Call (480) 616-9370 or request a quote by text.">
+  <meta name="theme-color" content="#f4faf7">
+  <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/the-cleaning-ladies/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2324564a'/%3E%3Cpath d='M8 17 l5 5 11-12' fill='none' stroke='%23f3d36b' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #24564a;
+      --mist: #e5f5ee;
+      --lemon: #f3d36b;
+      --paper: #f4faf7;
+      --ink: #1c2b26;
+      --line: #c5e4d6;
+      --focus: #24564a;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font: inherit; cursor: pointer; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(36,86,74,.04) 28px),
+        var(--paper);
+      color: var(--ink);
+      font-family: Nunito, "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
+      overflow-x: clip;
+    }
+    .skip {
+      position: absolute; left: 0.75rem; top: 0; transform: translateY(-120%);
+      background: var(--sage); color: #fff; padding: 0.55rem 0.8rem; z-index: 5; font-weight: 800;
+    }
+    .skip:focus { transform: none; top: 0.75rem; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a { color: var(--sage); }
+    .wrap { width: min(48rem, calc(100% - 2rem)); margin-inline: auto; }
+    header { padding: 1.8rem 0 0.4rem; }
+    .kicker { margin: 0; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.75rem; font-weight: 800; color: var(--sage); }
+    h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-weight: 650;
+      font-size: clamp(2.5rem, 10vw, 3.8rem);
+      line-height: 1.02;
+      margin: 0.3rem 0;
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; }
+    nav a { font-weight: 800; }
+    .actions { display: grid; gap: 0.55rem; margin-top: 1rem; }
+    .btn {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 3.35rem; padding: 0.7rem 1rem; border-radius: 0.9rem;
+      text-decoration: none; font-weight: 800; border: 0; font-family: inherit; font-size: 1rem;
+    }
+    .btn-sage { background: var(--sage); color: #fff; }
+    .btn-lemon { background: var(--lemon); color: var(--ink); }
+    section { padding: 1rem 0; }
+    h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-weight: 650; font-size: 1.8rem; margin: 0 0 0.55rem;
+    }
+    .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
+    .checks li {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 0.9rem;
+      padding: 0.85rem 0.9rem 0.85rem 2.6rem;
+      position: relative;
+    }
+    .checks li::before {
+      content: "";
+      position: absolute; left: 0.85rem; top: 1rem;
+      width: 1.05rem; height: 0.55rem;
+      border-left: 3px solid var(--sage);
+      border-bottom: 3px solid var(--sage);
+      transform: rotate(-45deg);
+    }
+    .checks h3 { margin: 0; font-size: 1.05rem; }
+    .checks p { margin: 0.15rem 0 0; }
+    form {
+      background: #fff;
+      border-radius: 1.2rem;
+      padding: 1rem 1rem 1.1rem;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 30px rgba(36,86,74,.06);
+    }
+    label { display: block; font-weight: 800; margin: 0.7rem 0 0.25rem; }
+    input, select, textarea {
+      width: 100%; font: inherit; font-size: 1rem; color: var(--ink);
+      background: var(--paper); border: 1px solid #b7d8c8; border-radius: 0.7rem; padding: 0.7rem 0.75rem;
+    }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 0.8rem; }
+    th, td { text-align: left; padding: 0.7rem 0.2rem; border-bottom: 1px solid var(--line); font-weight: 400; }
+    address { font-style: normal; }
+    .map iframe { width: 100%; height: 250px; border: 0; border-radius: 1rem; background: var(--mist); }
+    footer { padding: 0.4rem 0 2rem; color: #3d4f46; }
+    @media (min-width: 700px) {
+      .actions { grid-template-columns: 1fr 1fr; }
+      .checks { grid-template-columns: 1fr 1fr 1fr; }
+      .visit { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 1rem; align-items: start; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (forced-colors: active) { .btn { border: 1px solid ButtonText; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap">
+    <p class="kicker">House cleaning · Mesa</p>
+    <h1>The Cleaning Ladies</h1>
+    <p>House cleaning for Mesa homes. Call, or send a quote request by text.</p>
+    <nav aria-label="On this page">
+      <a href="#quote">Request a quote</a>
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Contact</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-sage" href="tel:+14806169370">Call (480) 616-9370</a>
+      <a class="btn btn-lemon" href="#quote">Request a quote</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap" id="quote" aria-labelledby="quote-title">
+      <form id="quote-form">
+        <h2 id="quote-title">Request a quote</h2>
+        <p id="quote-help">This opens a text to (480) 616-9370. Nothing is sent until you press send in your messages app.</p>
+        <label for="guest">Name</label>
+        <input id="guest" name="name" autocomplete="name" required>
+        <label for="service">What do you need?</label>
+        <select id="service" name="service" required>
+          <option value="">Choose one</option>
+          <option>Regular house cleaning</option>
+          <option>Deep cleaning</option>
+          <option>Move-in or move-out cleaning</option>
+          <option>Not sure yet</option>
+        </select>
+        <label for="notes">Anything else</label>
+        <textarea id="notes" name="notes" rows="3" placeholder="Neighborhood, how often, or a day that works"></textarea>
+        <div class="actions">
+          <button class="btn btn-lemon" type="submit">Text this quote request</button>
+          <a class="btn btn-sage" href="sms:+14806169370">Open a blank text</a>
+        </div>
+      </form>
+    </section>
+    <section class="wrap" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Ask for a quote</h2>
+      <ul class="checks">
+        <li>
+          <h3>Regular cleaning</h3>
+          <p>A recurring house clean. Tell them how often.</p>
+        </li>
+        <li>
+          <h3>Deep cleaning</h3>
+          <p>A heavier clean. Describe the home when you text.</p>
+        </li>
+        <li>
+          <h3>Move-in or move-out</h3>
+          <p>Ask about a one-time clean for a move.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="wrap" id="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">Hours</h2>
+      <table>
+        <tbody>
+          <tr><th scope="row">Monday–Friday</th><td>8:00 a.m.–4:00 p.m.</td></tr>
+          <tr><th scope="row">Saturday–Sunday</th><td>Closed</td></tr>
+        </tbody>
+      </table>
+      <p>Call or text (480) 616-9370 during these hours.</p>
+    </section>
+    <section class="wrap visit" id="visit" aria-labelledby="visit-title">
+      <div>
+        <h2 id="visit-title">Contact</h2>
+        <address>
+          923 W 10th St<br>
+          Mesa, AZ 85201
+        </address>
+        <p>Call or text <a href="tel:+14806169370">(480) 616-9370</a></p>
+        <p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=923%20W%2010th%20St%2C%20Mesa%2C%20AZ%2085201" target="_blank" rel="noopener noreferrer">Get directions<span class="sr-only"> (opens in a new tab)</span></a></p>
+        <p><a href="https://www.facebook.com/profile.php?id=100063962891973" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+      <div class="map">
+        <iframe title="Map of The Cleaning Ladies at 923 W 10th St, Mesa, AZ 85201" src="https://maps.google.com/maps?q=923%20W%2010th%20St%2C%20Mesa%2C%20AZ%2085201&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <script>
+    (function () {
+      var form = document.getElementById("quote-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var data = new FormData(form);
+        var notes = (data.get("notes") || "").toString().trim();
+        var body = "Hi The Cleaning Ladies, I'd like a quote. Name: " + data.get("name").toString().trim()
+          + ". Service: " + data.get("service").toString().trim()
+          + (notes ? ". Notes: " + notes : "") + ".";
+        window.location.href = "sms:+14806169370?body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tacos el Peluche | Weekend taco truck in Mesa</title>
+  <meta name="description" content="Tacos el Peluche is a taco truck at 1931 W University Dr, Mesa, at Dobson and University. Open Friday and Saturday 6:00 p.m.–1:00 a.m. Text (480) 679-9278 to order.">
+  <meta name="theme-color" content="#14081f">
+  <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/tacos-el-peluche/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314081f'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%233dffe8' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night: #14081f;
+      --grape: #2a1248;
+      --magenta: #ff2e8a;
+      --cyan: #3dffe8;
+      --cream: #fff4ea;
+      --focus: #3dffe8;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    button { font: inherit; cursor: pointer; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(255,46,138,.25), transparent 32%),
+        radial-gradient(circle at 100% 20%, rgba(61,255,232,.12), transparent 28%),
+        var(--night);
+      color: var(--cream);
+      font-family: Outfit, "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.5;
+      overflow-x: clip;
+    }
+    .skip {
+      position: absolute; left: 0.75rem; top: 0; transform: translateY(-120%);
+      background: var(--cyan); color: var(--night); padding: 0.55rem 0.8rem; z-index: 5; font-weight: 700;
+    }
+    .skip:focus { transform: none; top: 0.75rem; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a { color: var(--cyan); }
+    .wrap { width: min(46rem, calc(100% - 2rem)); margin-inline: auto; }
+    .open-flag {
+      display: inline-block;
+      margin-top: 1.2rem;
+      background: var(--magenta);
+      color: var(--night);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+    }
+    h1 {
+      font-family: Fredoka, "Trebuchet MS", sans-serif;
+      font-weight: 700;
+      font-size: clamp(3rem, 13vw, 5rem);
+      line-height: 0.92;
+      margin: 0.45rem 0 0.4rem;
+    }
+    .when {
+      font-family: Fredoka, "Trebuchet MS", sans-serif;
+      font-size: clamp(1.8rem, 7vw, 2.6rem);
+      line-height: 1.05;
+      margin: 0.2rem 0 0.6rem;
+      color: var(--cyan);
+    }
+    nav { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; }
+    nav a { color: var(--cream); font-weight: 700; }
+    .actions { display: grid; gap: 0.6rem; margin-top: 1rem; }
+    .btn {
+      display: flex; align-items: center; justify-content: center;
+      min-height: 3.4rem; padding: 0.75rem 1rem; border-radius: 1rem;
+      text-decoration: none; font-weight: 700; border: 2px solid transparent;
+    }
+    .btn-cyan { background: var(--cyan); color: var(--night); }
+    .btn-mag { background: var(--magenta); color: var(--night); }
+    .btn-ghost { background: transparent; color: var(--cream); border-color: rgba(255,244,234,.4); }
+    section { padding: 1.15rem 0; }
+    h2 { font-family: Fredoka, "Trebuchet MS", sans-serif; font-weight: 700; font-size: 1.8rem; margin: 0 0 0.5rem; }
+    .stub {
+      background:
+        radial-gradient(circle at 0 12px, transparent 8px, var(--grape) 8.5px) left / 16px 100% repeat-y,
+        var(--grape);
+      border-radius: 1rem;
+      padding: 1rem 1rem 1rem 1.4rem;
+    }
+    .stub p { margin: 0.35rem 0; }
+    .cards { display: grid; gap: 0.6rem; }
+    .card {
+      border: 1px solid rgba(61,255,232,.35);
+      border-radius: 1rem;
+      padding: 0.9rem 1rem;
+    }
+    .card h3 { margin: 0 0 0.2rem; }
+    .card p { margin: 0; color: #f3d8ea; }
+    form {
+      background: rgba(255,244,234,.06);
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    label { display: block; font-weight: 700; margin: 0.5rem 0 0.3rem; }
+    textarea {
+      width: 100%; font: inherit; font-size: 1rem; color: var(--night);
+      background: var(--cream); border: 0; border-radius: 0.8rem; padding: 0.75rem;
+    }
+    address { font-style: normal; }
+    .map iframe { width: 100%; height: 250px; border: 0; border-radius: 1rem; background: #2a1248; }
+    footer { padding: 0.4rem 0 2rem; color: #e7c3d8; }
+    @media (min-width: 700px) {
+      .actions { grid-template-columns: 1fr 1fr; }
+      .cards { grid-template-columns: 1fr 1fr; }
+      .visit { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 1rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (forced-colors: active) { .btn { border: 1px solid ButtonText; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap">
+    <p class="open-flag">Friday and Saturday only</p>
+    <h1>Tacos el Peluche</h1>
+    <p class="when">6:00 p.m.–1:00 a.m.</p>
+    <p>Weekend taco truck at the corner of Dobson and University. Text to order.</p>
+    <nav aria-label="On this page">
+      <a href="#order">Text to order</a>
+      <a href="#food">Food</a>
+      <a href="#hours">Hours</a>
+      <a href="#visit">Find the truck</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-cyan" href="sms:+14806799278">Text to order</a>
+      <a class="btn btn-ghost" href="tel:+14806799278">Call (480) 679-9278</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="wrap" id="order" aria-labelledby="order-title">
+      <form id="order-form">
+        <h2 id="order-title">Text to order</h2>
+        <p>Opens a text to (480) 679-9278. You send it from your phone.</p>
+        <label for="note">What do you want?</label>
+        <textarea id="note" name="note" rows="4" required placeholder="What you’d like and about what time"></textarea>
+        <div class="actions">
+          <button class="btn btn-mag" type="submit">Text this order</button>
+        </div>
+      </form>
+    </section>
+    <section class="wrap" id="food" aria-labelledby="food-title">
+      <h2 id="food-title">Late-night tacos</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Tacos</h3>
+          <p>Text for what’s on the truck tonight.</p>
+        </article>
+        <article class="card">
+          <h3>Mexican plates</h3>
+          <p>Ask before you head over. The truck is a weekend stop.</p>
+        </article>
+      </div>
+    </section>
+    <section class="wrap" id="hours" aria-labelledby="hours-title">
+      <div class="stub">
+        <h2 id="hours-title">Hours</h2>
+        <p><strong>Friday</strong> — 6:00 p.m.–1:00 a.m.</p>
+        <p><strong>Saturday</strong> — 6:00 p.m.–1:00 a.m.</p>
+        <p><strong>Sunday–Thursday</strong> — Closed</p>
+      </div>
+    </section>
+    <section class="wrap visit" id="visit" aria-labelledby="visit-title">
+      <div>
+        <h2 id="visit-title">Find the truck</h2>
+        <address>
+          1931 W University Dr<br>
+          Mesa, AZ 85201
+        </address>
+        <p>Corner of Dobson and University.</p>
+        <p>Call or text <a href="tel:+14806799278">(480) 679-9278</a></p>
+        <p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=1931%20W%20University%20Dr%2C%20Mesa%2C%20AZ%2085201" target="_blank" rel="noopener noreferrer">Get directions<span class="sr-only"> (opens in a new tab)</span></a></p>
+        <p><a href="https://facebook.com/100395308856532" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> (opens in a new tab)</span></a></p>
+      </div>
+      <div class="map">
+        <iframe title="Map of Tacos el Peluche at 1931 W University Dr, Mesa, AZ 85201" src="https://maps.google.com/maps?q=1931%20W%20University%20Dr%2C%20Mesa%2C%20AZ%2085201&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <script>
+    (function () {
+      var form = document.getElementById("order-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var note = new FormData(form).get("note").toString().trim();
+        var body = "Hi Tacos el Peluche, I'd like to order: " + note;
+        window.location.href = "sms:+14806799278?body=" + encodeURIComponent(body);
+      });
+    })();
+  </script>
+</body>
+</html>
