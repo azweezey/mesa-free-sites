@@ -1,10 +1,12 @@
-# Free websites for Mesa small businesses
+# Mesa Forward
 
-One-page sites for ten Mesa, Arizona businesses, built to hand to the owner. By Mesa Nights Productions LLC.
+The homepage is Mesa Forward, a community project by Mesa Nights Productions LLC in Mesa, Arizona. Small businesses and neighbors help each other without money. The project starts with a free consultation and free tools. When someone can, they pay it forward with their own skill or time.
 
 GitHub Pages serves this folder from the `main` branch:
 
 https://azweezey.github.io/mesa-free-sites/
+
+The folders below are free one-page sites built for local businesses. They are not memberships or endorsements. Static HTML and CSS. No build step.
 
 | Business | URL |
 | --- | --- |
@@ -19,4 +21,4 @@ https://azweezey.github.io/mesa-free-sites/
 | The Cleaning Ladies | https://azweezey.github.io/mesa-free-sites/the-cleaning-ladies/ |
 | Joe’s Barber Shop | https://azweezey.github.io/mesa-free-sites/joes-barber-shop/ |
 
-Static HTML and CSS. No build step. Hours, phones, and links come from the contact sheet and are not filled in where a fact was missing.
+Sign-up forms on the homepage stay closed until `MESA_FORWARD_CONTACT` in `index.html` is set to a public email.

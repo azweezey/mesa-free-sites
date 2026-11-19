@@ -3,180 +3,508 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free websites for Mesa small businesses</title>
-  <meta name="description" content="Free one-page websites for ten Mesa, Arizona small businesses, built by Mesa Nights Productions LLC.">
-  <meta name="theme-color" content="#f4efe6">
+  <title>Mesa Forward · Help a neighbor. Get help back. No invoice.</title>
+  <meta name="description" content="Mesa Forward is a community project by Mesa Nights Productions LLC. Free websites and tools for Mesa small businesses and neighbors. When you can, pay it forward with your own skill. No invoice.">
+  <meta name="theme-color" content="#1a3330">
   <link rel="canonical" href="https://azweezey.github.io/mesa-free-sites/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233e5c49'/%3E%3Cpath d='M8 22 V10 h6 v12 M18 22 V14 h6 v8' fill='none' stroke='%23f4efe6' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a3330'/%3E%3Ccircle cx='21' cy='12' r='5' fill='%23e8b15a'/%3E%3Cpath d='M6 22h14' stroke='%23f7f1e7' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,600;7..72,700&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --sand: #f4efe6;
-      --ink: #1f1a17;
-      --clay: #9c4a2b;
-      --sage: #3e5c49;
+      --paper: #f7f1e7;
+      --ink: #241c16;
+      --muted: #5c5148;
+      --clay: #9a3418;
+      --sage: #24564a;
+      --deep: #1a3330;
+      --gold: #e8b15a;
       --card: #fffdf9;
-      --line: #e4d9cc;
-      --focus: #9c4a2b;
+      --line: #e6d9c8;
+      --focus: #e8b15a;
     }
     *, *::before, *::after { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      background:
-        radial-gradient(circle at 100% 0, rgba(156,74,43,.08), transparent 32%),
-        var(--sand);
+      background: var(--paper);
       color: var(--ink);
-      font-family: "Public Sans", "Segoe UI", sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.5;
+      font-family: Outfit, "Segoe UI", sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.55;
       overflow-x: clip;
     }
+    button { font: inherit; cursor: pointer; }
     .skip {
-      position: absolute; left: 0.75rem; top: 0; transform: translateY(-120%);
-      background: var(--ink); color: var(--sand); padding: 0.55rem 0.8rem; z-index: 5;
+      position: absolute; left: 0.75rem; top: 0; transform: translateY(-140%);
+      background: var(--gold); color: var(--ink); padding: 0.55rem 0.8rem; z-index: 20; font-weight: 700;
     }
     .skip:focus { transform: none; top: 0.75rem; }
     :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-    a { color: inherit; }
+    a { color: var(--sage); }
     .wrap { width: min(68rem, calc(100% - 2rem)); margin-inline: auto; }
-    header { padding: 2rem 0 0.5rem; }
-    .by {
-      margin: 0;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+    .top {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 0.6rem 1rem; padding: 0.9rem 0;
+    }
+    .logo {
+      color: var(--ink); text-decoration: none; font-weight: 700;
+      font-family: Fraunces, Georgia, serif; font-size: 1.25rem;
+    }
+    .top nav { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
+    .top nav a { color: var(--ink); font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+    .top nav a:hover { text-decoration: underline; text-underline-offset: 0.18em; }
+    .hero {
+      background:
+        radial-gradient(circle at 88% 8%, rgba(232,177,90,.42), transparent 26%),
+        radial-gradient(circle at 8% 90%, rgba(154,52,24,.38), transparent 32%),
+        linear-gradient(165deg, #16302d 0%, #1a3330 46%, #3a2e24 100%);
+      color: #f7f1e7;
+      border-radius: 0 0 2rem 2rem;
+      padding: 0.4rem 0 3.2rem;
+    }
+    .hero a { color: #f7f1e7; }
+    .kicker {
+      margin: 1.2rem 0 0;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      font-size: 0.78rem;
-      color: var(--clay);
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gold);
     }
     h1 {
-      font-family: Literata, Georgia, serif;
-      font-size: clamp(2.2rem, 7vw, 3.6rem);
-      line-height: 1.08;
-      font-weight: 700;
-      margin: 0.35rem 0 0.5rem;
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 680;
+      font-size: clamp(3.3rem, 14vw, 6.2rem);
+      line-height: 0.92;
+      letter-spacing: -0.03em;
+      margin: 0.25rem 0 0.45rem;
+    }
+    .tagline {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(1.45rem, 4.4vw, 2.15rem);
+      font-weight: 560;
+      line-height: 1.2;
+      margin: 0;
       max-width: 18ch;
     }
-    .lead { margin: 0; max-width: 38rem; font-size: 1.1rem; }
-    main { padding: 1.2rem 0 1rem; }
-    .grid { display: grid; gap: 0.8rem; }
+    .mission { margin: 1rem 0 0; max-width: 38rem; font-size: 1.12rem; color: #f3e7d4; }
+    .actions { display: grid; gap: 0.65rem; margin-top: 1.4rem; max-width: 28rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 3.35rem; padding: 0.75rem 1.1rem;
+      border-radius: 999px; text-decoration: none; font-weight: 700;
+      border: 2px solid transparent; text-align: center;
+    }
+    .btn-gold { background: var(--gold); color: #241c16; }
+    .hero a.btn-gold { color: #241c16; }
+    .btn-line { background: transparent; color: #f7f1e7; border-color: rgba(247,241,231,.7); }
+    .hero a.btn-line { color: #f7f1e7; }
+    .btn-sage { background: var(--sage); color: #fff; }
+    .btn-clay { background: var(--clay); color: #fffaf3; }
+    .operator { margin: 1.1rem 0 0; color: #e7d3b4; font-size: 0.95rem; }
+    section { padding: 2.4rem 0; }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 680;
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.6rem;
+    }
+    .lede { margin: 0 0 1.2rem; max-width: 40rem; color: var(--muted); }
+    .steps { display: grid; gap: 0.8rem; list-style: none; margin: 0; padding: 0; }
+    .steps li {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1.1rem;
+      padding: 1.1rem 1.1rem 1.15rem;
+    }
+    .num {
+      font-family: Fraunces, Georgia, serif;
+      color: var(--clay);
+      font-size: 1.7rem;
+      line-height: 1;
+      display: block;
+      margin-bottom: 0.45rem;
+    }
+    .steps h3 { margin: 0 0 0.35rem; font-size: 1.2rem; }
+    .steps p { margin: 0; }
+    .gifts { display: grid; gap: 0.7rem; }
+    .gift {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1rem 1rem 1.05rem 1.05rem;
+      border: 1px solid var(--line);
+      border-left: 5px solid var(--sage);
+    }
+    .gift h3 { margin: 0 0 0.25rem; font-size: 1.08rem; }
+    .gift p { margin: 0; color: var(--muted); }
+    .why {
+      background: var(--deep);
+      color: #f7f1e7;
+      border-radius: 1.6rem;
+      padding: 1.5rem 1.2rem 1.6rem;
+    }
+    .why h2 { color: #f7f1e7; }
+    .why p { margin: 0.7rem 0 0; max-width: 42rem; color: #f0e4d2; }
+    .why .tagline { color: var(--gold); margin-top: 1rem; max-width: 16ch; font-size: clamp(1.5rem, 4vw, 2rem); }
+    .note {
+      background: #fff6e4;
+      border: 1px solid #ead3a4;
+      border-radius: 0.9rem;
+      padding: 0.85rem 1rem;
+      margin: 0 0 1rem;
+    }
+    .sites { display: grid; gap: 0.75rem; }
     .card {
-      display: flex; flex-direction: column; gap: 0.25rem;
+      display: flex; flex-direction: column; gap: 0.2rem;
       background: var(--card);
       border: 1px solid var(--line);
       border-top: 6px solid var(--accent, var(--sage));
-      border-radius: 0.9rem;
-      padding: 0.95rem 1rem 1rem;
+      border-radius: 0.95rem;
+      padding: 0.9rem 1rem 1rem;
       text-decoration: none;
+      color: var(--ink);
       min-height: 100%;
     }
     .card:hover, .card:focus-visible { border-color: var(--accent, var(--sage)); }
     .cat {
       margin: 0;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--accent, var(--sage));
     }
-    .card h2 {
-      font-family: Literata, Georgia, serif;
-      font-size: 1.45rem;
+    .card h3 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.35rem;
       line-height: 1.15;
-      margin: 0.1rem 0;
+      margin: 0.15rem 0;
+      font-weight: 680;
     }
     .card p { margin: 0; }
-    .go { margin-top: auto; padding-top: 0.7rem; font-weight: 700; color: var(--sage); }
-    footer { padding: 0.5rem 0 2rem; color: #4a4038; }
-    @media (min-width: 700px) {
-      .grid { grid-template-columns: 1fr 1fr; }
+    .go { margin-top: auto; padding-top: 0.65rem; font-weight: 700; color: var(--sage); }
+    .forms { display: grid; gap: 0.9rem; }
+    form {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1.15rem;
+      padding: 1.05rem 1rem 1.15rem;
+    }
+    form h3 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.55rem;
+      margin: 0 0 0.35rem;
+      font-weight: 680;
+    }
+    label { display: block; font-weight: 600; margin: 0.75rem 0 0.28rem; }
+    input, select, textarea {
+      width: 100%;
+      font: inherit;
+      font-size: 1rem;
+      color: var(--ink);
+      background: #fff;
+      border: 1.5px solid #d9cbb8;
+      border-radius: 0.7rem;
+      padding: 0.72rem 0.75rem;
+    }
+    textarea { min-height: 6rem; resize: vertical; }
+    form .btn { width: 100%; margin-top: 0.9rem; }
+    footer {
+      padding: 0.2rem 0 2.2rem;
+      color: var(--muted);
+    }
+    @media (min-width: 720px) {
+      .actions { grid-template-columns: 1fr 1fr; max-width: 36rem; }
+      .steps { grid-template-columns: 1fr 1fr 1fr; }
+      .gifts { grid-template-columns: 1fr 1fr; }
+      .sites { grid-template-columns: 1fr 1fr; }
+      .forms { grid-template-columns: 1fr 1fr; align-items: start; }
+      .why { padding: 2rem 2rem 2.1rem; }
+    }
+    @media (min-width: 1040px) {
+      .gifts { grid-template-columns: 1fr 1fr 1fr; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media (forced-colors: active) {
+      .btn, .card, form { border: 1px solid ButtonText; }
+    }
   </style>
 </head>
-<body>
+<body id="top">
   <a class="skip" href="#main">Skip to content</a>
-  <header class="wrap">
-    <p class="by">Mesa Nights Productions LLC</p>
-    <h1>Free websites for Mesa small businesses</h1>
-    <p class="lead">Ten one-page sites for Mesa shops. Each one has the address, hours, a map, and a way to call. Ready to hand to the owner.</p>
-  </header>
-  <main id="main" class="wrap">
-    <div class="grid">
-      <a class="card" style="--accent:#9d1c12" href="tacos-tapatio/">
-        <p class="cat">Food truck</p>
-        <h2>Tacos Tapatio</h2>
-        <p>7602 E Main St, Mesa, AZ 85207</p>
-        <p>(480) 390-8775</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#1f4d3e" href="arirang-banchan/">
-        <p class="cat">Korean restaurant</p>
-        <h2>Arirang Banchan</h2>
-        <p>111 S Dobson Rd #109, Mesa, AZ 85202</p>
-        <p>(602) 869-4165</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#c4491d" href="gladys-restaurante-salvadoreno/">
-        <p class="cat">Salvadoran restaurant</p>
-        <h2>Glady’s Restaurante Salvadoreño</h2>
-        <p>1423 S Country Club Dr, Mesa, AZ 85210</p>
-        <p>(480) 649-2541</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#1e2328" href="howards-garage/">
-        <p class="cat">Auto repair</p>
-        <h2>Howard’s Garage</h2>
-        <p>31 E Crescent Ave, Mesa, AZ 85210</p>
-        <p>(480) 898-7277</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#6e1e2a" href="carls-barber-shop/">
-        <p class="cat">Barbershop</p>
-        <h2>Carl’s Barber Shop</h2>
-        <p>1010 E Main St, Mesa, AZ 85203</p>
-        <p>(480) 649-9250</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#4a2c40" href="jbb-barber-beauty-salon/">
-        <p class="cat">Barber and beauty salon</p>
-        <h2>JBB Barber &amp; Beauty Salon LLC</h2>
-        <p>1134 S Stapley Dr #106, Mesa, AZ 85204</p>
-        <p>(480) 610-4694</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#7a1f16" href="el-gallo-de-lagos/">
-        <p class="cat">Mexican restaurant</p>
-        <h2>El Gallo De Lagos</h2>
-        <p>730 E Brown Rd, Mesa, AZ 85203</p>
-        <p>(480) 610-0755</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#9d1458" href="tacos-el-peluche/">
-        <p class="cat">Taco truck</p>
-        <h2>Tacos el Peluche</h2>
-        <p>1931 W University Dr, Mesa, AZ 85201</p>
-        <p>(480) 679-9278</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#24564a" href="the-cleaning-ladies/">
-        <p class="cat">House cleaning</p>
-        <h2>The Cleaning Ladies</h2>
-        <p>923 W 10th St, Mesa, AZ 85201</p>
-        <p>(480) 616-9370</p>
-        <p class="go">View website</p>
-      </a>
-      <a class="card" style="--accent:#1d3a2f" href="joes-barber-shop/">
-        <p class="cat">Barbershop</p>
-        <h2>Joe’s Barber Shop</h2>
-        <p>638 E University Dr, Mesa, AZ 85203</p>
-        <p>(480) 834-0904</p>
-        <p class="go">View website</p>
-      </a>
+  <div class="hero">
+    <div class="wrap top">
+      <a class="logo" href="#top">Mesa Forward</a>
+      <nav aria-label="On this page">
+        <a href="#how">How it works</a>
+        <a href="#free">Free help</a>
+        <a href="#sites">Sites</a>
+        <a href="#join">Join</a>
+      </nav>
     </div>
+    <header class="wrap">
+      <p class="kicker">Mesa, Arizona</p>
+      <h1>Mesa Forward</h1>
+      <p class="tagline">Help a neighbor. Get help back. No invoice.</p>
+      <p class="mission">A community of small businesses and neighbors who help each other without money. Mesa Nights Productions LLC starts with a free consultation and free tools. When you can, you pay it forward with your own skill or time.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#join-help">Get your free website</a>
+        <a class="btn btn-line" href="#join-offer">Offer a skill</a>
+      </div>
+      <p class="operator">Run by Josh Laliberte, Mesa Nights Productions LLC.</p>
+    </header>
+  </div>
+
+  <main id="main">
+    <section class="wrap" id="how" aria-labelledby="how-title">
+      <h2 id="how-title">How it works</h2>
+      <p class="lede">Three steps. Help comes first. Money stays out of it.</p>
+      <ol class="steps">
+        <li>
+          <span class="num">01</span>
+          <h3>We help you free</h3>
+          <p>A one-hour consultation, then a website, a way to book or take orders, a cleaned-up Google listing, a workflow, or an AI assistant. It costs nothing now or later.</p>
+        </li>
+        <li>
+          <span class="num">02</span>
+          <h3>You grow</h3>
+          <p>The tools stay with you. Neighbors can find your hours, call, text, and ask for what you already do well.</p>
+        </li>
+        <li>
+          <span class="num">03</span>
+          <h3>You pay it forward</h3>
+          <p>When you can, offer your own skill or time to another local business or neighbor. A meal, a repair, a cleaning visit, an hour of know-how. No invoice.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap" id="free" aria-labelledby="free-title">
+      <h2 id="free-title">What we give for free</h2>
+      <p class="lede">Practical help for a Mesa shop or a neighbor who needs a hand getting found and getting organized.</p>
+      <div class="gifts">
+        <article class="gift">
+          <h3>Websites</h3>
+          <p>A simple page with your name, hours, map, and a way to call. Ready to hand to you.</p>
+        </article>
+        <article class="gift">
+          <h3>Online booking and ordering</h3>
+          <p>A phone-friendly way for people to book a time or send an order ahead.</p>
+        </article>
+        <article class="gift">
+          <h3>Google listing cleanup</h3>
+          <p>Help so the public listing points at a page that actually opens, with the right hours and address.</p>
+        </article>
+        <article class="gift">
+          <h3>Workflows</h3>
+          <p>A plain routine for the repeat tasks that eat a small shop’s day.</p>
+        </article>
+        <article class="gift">
+          <h3>AI assistants</h3>
+          <p>Help with writing, follow-up, and the small office tasks that rarely fit in a workday.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="why" aria-labelledby="why-title">
+      <div class="why">
+        <h2 id="why-title">Why money-free</h2>
+        <p>A neighborhood holds when help can move without an invoice. You are not buying a package, and you are not collecting credits. You get a real tool or a real hour, and later you offer a skill you already have.</p>
+        <p>Software is taking on more of the routine work. What stays close to the ground is still a person: someone who can cook, fix, cut hair, clean, or sit with a problem for an hour. Mesa Forward is a way to put that skill to work for someone nearby.</p>
+        <p class="tagline">Help a neighbor. Get help back. No invoice.</p>
+      </div>
+    </section>
+
+    <section class="wrap" id="sites" aria-labelledby="sites-title">
+      <h2 id="sites-title">Sites we've built</h2>
+      <p class="lede">Free websites built for local Mesa businesses, ready to hand to the owner. A listing here is not a membership and not an endorsement. These owners have not joined Mesa Forward.</p>
+      <div class="sites">
+        <a class="card" style="--accent:#9d1c12" href="tacos-tapatio/">
+          <p class="cat">Food truck</p>
+          <h3>Tacos Tapatio</h3>
+          <p>7602 E Main St, Mesa, AZ 85207</p>
+          <p>(480) 390-8775</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#1f4d3e" href="arirang-banchan/">
+          <p class="cat">Korean restaurant</p>
+          <h3>Arirang Banchan</h3>
+          <p>111 S Dobson Rd #109, Mesa, AZ 85202</p>
+          <p>(602) 869-4165</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#c4491d" href="gladys-restaurante-salvadoreno/">
+          <p class="cat">Salvadoran restaurant</p>
+          <h3>Glady’s Restaurante Salvadoreño</h3>
+          <p>1423 S Country Club Dr, Mesa, AZ 85210</p>
+          <p>(480) 649-2541</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#1e2328" href="howards-garage/">
+          <p class="cat">Auto repair</p>
+          <h3>Howard’s Garage</h3>
+          <p>31 E Crescent Ave, Mesa, AZ 85210</p>
+          <p>(480) 898-7277</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#6e1e2a" href="carls-barber-shop/">
+          <p class="cat">Barbershop</p>
+          <h3>Carl’s Barber Shop</h3>
+          <p>1010 E Main St, Mesa, AZ 85203</p>
+          <p>(480) 649-9250</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#4a2c40" href="jbb-barber-beauty-salon/">
+          <p class="cat">Barber and beauty salon</p>
+          <h3>JBB Barber &amp; Beauty Salon LLC</h3>
+          <p>1134 S Stapley Dr #106, Mesa, AZ 85204</p>
+          <p>(480) 610-4694</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#7a1f16" href="el-gallo-de-lagos/">
+          <p class="cat">Mexican restaurant</p>
+          <h3>El Gallo De Lagos</h3>
+          <p>730 E Brown Rd, Mesa, AZ 85203</p>
+          <p>(480) 610-0755</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#9d1458" href="tacos-el-peluche/">
+          <p class="cat">Taco truck</p>
+          <h3>Tacos el Peluche</h3>
+          <p>1931 W University Dr, Mesa, AZ 85201</p>
+          <p>(480) 679-9278</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#24564a" href="the-cleaning-ladies/">
+          <p class="cat">House cleaning</p>
+          <h3>The Cleaning Ladies</h3>
+          <p>923 W 10th St, Mesa, AZ 85201</p>
+          <p>(480) 616-9370</p>
+          <p class="go">View the free site</p>
+        </a>
+        <a class="card" style="--accent:#1d3a2f" href="joes-barber-shop/">
+          <p class="cat">Barbershop</p>
+          <h3>Joe’s Barber Shop</h3>
+          <p>638 E University Dr, Mesa, AZ 85203</p>
+          <p>(480) 834-0904</p>
+          <p class="go">View the free site</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="wrap" id="join" aria-labelledby="join-title">
+      <h2 id="join-title">Join Mesa Forward</h2>
+      <p class="lede">Tell us if you want help, or if you have a skill to offer a neighbor. Both start the same way: a conversation, no invoice.</p>
+      <p class="note" id="signup-soon" role="status">Sign-ups open soon. We’re setting up a public way to reach Mesa Forward. You can look through the forms. Nothing is sent from this page yet.</p>
+      <div class="forms">
+        <form id="join-help" aria-describedby="signup-soon">
+          <h3>I want help for my business</h3>
+          <p>A free consultation, a website, or another tool from the list above.</p>
+          <label for="help-name">Your name</label>
+          <input id="help-name" name="name" autocomplete="name" required>
+          <label for="help-business">Business name</label>
+          <input id="help-business" name="business" autocomplete="organization" required>
+          <label for="help-need">What would help?</label>
+          <select id="help-need" name="need" required>
+            <option value="">Choose one</option>
+            <option>A free website</option>
+            <option>Online booking or ordering</option>
+            <option>Google listing cleanup</option>
+            <option>A workflow</option>
+            <option>An AI assistant</option>
+            <option>A one-hour consultation</option>
+            <option>Not sure yet</option>
+          </select>
+          <label for="help-reach">How can we reach you?</label>
+          <input id="help-reach" name="reach" autocomplete="tel" required placeholder="Phone or email">
+          <label for="help-note">Anything else</label>
+          <textarea id="help-note" name="note" placeholder="What the shop does, and what you need first"></textarea>
+          <button class="btn btn-clay" type="submit">Request this help</button>
+        </form>
+        <form id="join-offer" aria-describedby="signup-soon">
+          <h3>I want to offer a skill</h3>
+          <p>Your time or your trade, for another local business or neighbor, when you can.</p>
+          <label for="offer-name">Your name</label>
+          <input id="offer-name" name="name" autocomplete="name" required>
+          <label for="offer-skill">Skill or time you can offer</label>
+          <input id="offer-skill" name="skill" required placeholder="A repair, a meal, an hour">
+          <label for="offer-reach">How can we reach you?</label>
+          <input id="offer-reach" name="reach" autocomplete="tel" required placeholder="Phone or email">
+          <label for="offer-note">Anything else</label>
+          <textarea id="offer-note" name="note" placeholder="When you’re usually free, or who you’d like to help"></textarea>
+          <button class="btn btn-sage" type="submit">Offer this skill</button>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="wrap">Free website by Mesa Nights Productions LLC</footer>
+  <footer class="wrap">Mesa Forward, a community project by Mesa Nights Productions LLC, Mesa, Arizona</footer>
+  <script>
+    // MESA_FORWARD_CONTACT
+    // The one public address for Mesa Forward sign-ups.
+    // Josh has not published a contact yet. Leave this as an empty string.
+    // While it is empty, both forms stay on the page and show
+    // "Sign-ups open soon" instead of opening a mail app.
+    // Put an email address here later. Submitting a form will then
+    // compose a mailto: to that address. Change it in this one place only.
+    const MESA_FORWARD_CONTACT = "";
+
+    (function () {
+      var contact = (MESA_FORWARD_CONTACT || "").trim();
+      var ready = contact.indexOf("@") > 0;
+      var note = document.getElementById("signup-soon");
+      if (ready) {
+        note.hidden = true;
+      }
+
+      function line(label, value) {
+        var text = (value || "").toString().trim();
+        return text ? label + ": " + text : "";
+      }
+
+      function send(subject, fields) {
+        var body = fields.filter(Boolean).join("\n");
+        window.location.href = "mailto:" + contact
+          + "?subject=" + encodeURIComponent(subject)
+          + "&body=" + encodeURIComponent(body);
+      }
+
+      function wire(form, subject, build) {
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          if (!ready) {
+            note.hidden = false;
+            note.focus ? note.setAttribute("tabindex", "-1") : null;
+            note.focus();
+            return;
+          }
+          send(subject, build(new FormData(form)));
+        });
+      }
+
+      wire(document.getElementById("join-help"), "Mesa Forward: request for help", function (data) {
+        return [
+          "Mesa Forward request for help",
+          line("Name", data.get("name")),
+          line("Business", data.get("business")),
+          line("Need", data.get("need")),
+          line("Reach", data.get("reach")),
+          line("Note", data.get("note"))
+        ];
+      });
+
+      wire(document.getElementById("join-offer"), "Mesa Forward: skill offer", function (data) {
+        return [
+          "Mesa Forward skill offer",
+          line("Name", data.get("name")),
+          line("Skill", data.get("skill")),
+          line("Reach", data.get("reach")),
+          line("Note", data.get("note"))
+        ];
+      });
+    })();
+  </script>
 </body>
 </html>
